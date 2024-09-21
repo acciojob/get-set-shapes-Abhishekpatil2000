@@ -1,43 +1,43 @@
-//complete this code
+
 class Rectangle {
 	constructor(width,height){
 	this.width = width;
 	this.height = height;
 	}
-    get width() 
+    get horizontal()
 	{
-	return `${this.width}` ;
+	return this.width;
 	}
     
-    get height()
+    get Vertical()
 	{
-	return `${this.height}`;
+	return this.height;
 	}
 	
     getArea(){
-		return ${this.width}*${this.height};
+		return this.width * this.height;
 	}
 	
 }
 
 class Square extends Rectangle{
 	constructor(width){
-		super(width);
+		super(width,width);
 	}
 	getPerimeter(){
-		return 4*${this.width}*${this.width};
+		return 4*this.horizontal;
 	}
 }
 
 const aRectangle = new Rectangle(8,9);
-console.log(aRectangle.width);
-console.log(aRectangle.height);
+console.log(aRectangle.horizontal);
+console.log(aRectangle.Vertical);
 console.log(aRectangle.getArea());
 
 
 const aSquare = new Square(8)
-console.log(aSquare.width);
-console.log(aSquare.height);
+console.log(aSquare.horizontal);
+console.log(aSquare.Vertical);
 console.log(aSquare.getArea());
 console.log(aSquare.getPerimeter());
 

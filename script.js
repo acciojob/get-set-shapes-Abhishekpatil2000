@@ -4,12 +4,18 @@ class Rectangle {
 	this.width = width;
 	this.height = height;
 	}
-    get width=()=> return `${this.width}` ;
+    get width() 
+	{
+	return `${this.width}` ;
+	}
     
-    get height=()=> return `${this.height}`;
-
+    get height()
+	{
+	return `${this.height}`;
+	}
+	
     getArea(){
-		return width*height;
+		return ${this.width}*${this.height};
 	}
 	
 }
@@ -19,7 +25,7 @@ class Square extends Rectangle{
 		super(width);
 	}
 	getPerimeter(){
-		return 4*width*width;
+		return 4*${this.width}*${this.width};
 	}
 }
 
